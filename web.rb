@@ -37,7 +37,7 @@ end
 get '/lesson/1' do
   Twilio::TwiML::Response.new do |r|
     r.Say 'Many people struggle to understand their lifes purpose.  While we can not tell you specifics about your situation.  Let this be your guiding light.'
-    r.Play 'https://s3-us-west-2.amazonaws.com/skynyrd/1-05+Simple+Man.mp3'
+    r.Play 'https://s3.amazonaws.com/pre-paid-language/01+Wolf+%26+I.mp3'
     r.Say 'Feeling better? Great because it does not get much better than that. What would you like to do next?'
     r.Gather :numDigits => '1', :action => '/lesson/1/done', :method => 'get' do |g|
       g.Say 'Press 1 to hear the lesson again'
