@@ -17,7 +17,7 @@ get '/' do
 end
 
 get '/lesson' do
-  redirect '/' unless ['1', '2', '3', '4', '5'].include?(params['Digits'])
+  redirect '/' unless ['1', '2', '3', '4', '5', '6'].include?(params['Digits'])
   if params['Digits'] == '1'
     redirect '/lesson/1'
   elsif params['Digits'] == '2'
