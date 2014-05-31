@@ -77,7 +77,7 @@ end
 get '/lesson/3' do
   Twilio::TwiML::Response.new do |r|
     r.Say 'We have all woken up with a serious headache wondering why we did whatever we did last night.  We feel you.  This lesson is for you.'
-    r.Play 'https://s3-us-west-2.amazonaws.com/skynyrd/01-13+That+Smell.mp3'
+    r.Play 'https://s3-us-west-2.amazonaws.com/skynyrd/01-13-+That+Smell.mp3'
     r.Say 'Feeling better? Well maybe not that headache, but hopefully that helped put some things in perspective. What would you like to do next?'
     r.Gather :numDigits => '1', :action => '/lesson/1/done', :method => 'get' do |g|
       g.Say 'Press 1 to hear the lesson again'
