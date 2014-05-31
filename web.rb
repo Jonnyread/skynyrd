@@ -4,7 +4,7 @@ require 'twilio-ruby'
 get '/' do
   Twilio::TwiML::Response.new do |r|
     r.Say 'Welcome to the Lynyrd Skynyrd Life Lessons Hotline.  We are here to help you with whatever problems you may be facing.  Please listen to the following menu and select the issue you need help with.' , :voice => "woman"
-    r.Gather :numDigits => '1', :action => '/issue', :method => 'get' do |g|
+    r.Gather :numDigits => '1', :action => '/lesson', :method => 'get' do |g|
       g.Say 'Press 1 if you are struggling to understand your lifes purpose.', :voice => "woman"
       g.Say 'Press 2 if you are having trouble prioritizing life, work, and love.', :voice => "woman"
       g.Say 'Press 3 if you are thinking you may be partying to much.', :voice => "woman"
