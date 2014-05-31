@@ -57,7 +57,7 @@ end
 get '/lesson/2' do
   Twilio::TwiML::Response.new do |r|
     r.Say 'Prioritizing your life can be very difficult.  We certainly understand that.  Listen to this lesson and get some help.'
-    r.Play 'https://s3-us-west-2.amazonaws.com/skynyrd/2-09+Searchin%27.mp3'
+    r.Play 'https://s3-us-west-2.amazonaws.com/skynyrd/02-06-+Searchin.mp3'
     r.Say 'Feeling better? We are too. What would you like to do next?'
     r.Gather :numDigits => '1', :action => '/lesson/1/done', :method => 'get' do |g|
       g.Say 'Press 1 to hear the lesson again'
@@ -77,7 +77,7 @@ end
 get '/lesson/3' do
   Twilio::TwiML::Response.new do |r|
     r.Say 'We have all woken up with a serious headache wondering why we did whatever we did last night.  We feel you.  This lesson is for you.'
-    r.Play 'https://s3-us-west-2.amazonaws.com/skynyrd/1-14+That+Smell.mp3'
+    r.Play 'https://s3-us-west-2.amazonaws.com/skynyrd/01-13+That+Smell.mp3'
     r.Say 'Feeling better? Well maybe not that headache, but hopefully that helped put some things in perspective. What would you like to do next?'
     r.Gather :numDigits => '1', :action => '/lesson/1/done', :method => 'get' do |g|
       g.Say 'Press 1 to hear the lesson again'
@@ -97,7 +97,7 @@ end
 get '/lesson/4' do
   Twilio::TwiML::Response.new do |r|
     r.Say 'Loss is one of the toughest parts about being human. Let this lesson help to put your mind and heart at ease.'
-    r.Play 'https://s3-us-west-2.amazonaws.com/skynyrd/1-15+Free+Bird.mp3'
+    r.Play 'https://s3-us-west-2.amazonaws.com/skynyrd/01-13-+Free+Bird.mp3'
     r.Say 'Wow that makes us feel better everytime.  We hope it helped you too. What would you like to do next?'
     r.Gather :numDigits => '1', :action => '/lesson/1/done', :method => 'get' do |g|
       g.Say 'Press 1 to hear the lesson again'
@@ -117,7 +117,7 @@ end
 get '/lesson/5' do
   Twilio::TwiML::Response.new do |r|
     r.Say 'Ending a relationship may be one of the toughest things to do, but sometimes it is for the best.  This lesson will definitely help you let a little bit of it out.'
-    r.Play 'https://s3-us-west-2.amazonaws.com/skynyrd/1-03+Tuesday%27s+Gone.mp3'
+    r.Play 'https://s3-us-west-2.amazonaws.com/skynyrd/01-02-+Tuesdays+Gone.mp3'
     r.Say 'You made the right choice my friend. Now what would you like to do next?'
     r.Gather :numDigits => '1', :action => '/lesson/1/done', :method => 'get' do |g|
       g.Say 'Press 1 to hear the lesson again'
@@ -137,7 +137,7 @@ end
 get '/lesson/6' do
   Twilio::TwiML::Response.new do |r|
     r.Say 'We have all taken our licks from the damn economic crisis.  If you are still struggling let this lesson ease your pain.'
-    r.Play 'https://s3-us-west-2.amazonaws.com/skynyrd/2-04+Mr.+Banker+(Single+Version).mp3'
+    r.Play 'https://s3-us-west-2.amazonaws.com/skynyrd/01-10-+Mr+Banker.mp3'
     r.Say 'We can not put money in your pocket, but we can put a great lesson in your heart. What would you like to do next?'
     r.Gather :numDigits => '1', :action => '/lesson/1/done', :method => 'get' do |g|
       g.Say 'Press 1 to hear the lesson again'
